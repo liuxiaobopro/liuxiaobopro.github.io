@@ -1,3 +1,5 @@
-baseURL = 'http://liuxiaobopro.github.io/'
-languageCode = 'cn'
-title = 'ThirteenX Site'
+baseURL = 'http://liuxiaobo.github.io/'
+languageCode = 'zh-cn'
+title = 'Thirteen Site'
+theme = 'ananke'
+publishDir = '../'
