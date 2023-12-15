@@ -1,1 +1,1 @@
-# Thirteen Blog
+# Blog
