@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: http://qncdn.liuxiaobo.pro/wl9z8z3ykx1702629889091brookeliuxiaobo.png
+heroImage: /img/brookeliuxiaobo.png
 actions:
   - text: 去看看 ->
     link: /guide/
