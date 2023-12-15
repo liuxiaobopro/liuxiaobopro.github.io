@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-rc.0">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/icon/128x.png"><title>Thirteen</title><meta name="description" content="后端开发 Thirteen 的个人博客">
+    <link rel="preload" href="/assets/style-pBmjJHNx.css" as="style"><link rel="stylesheet" href="/assets/style-pBmjJHNx.css">
+    <link rel="modulepreload" href="/assets/app-9qRtXqBa.js"><link rel="modulepreload" href="/assets/Vue生命周期.html-gsX0D7Sx.js"><link rel="modulepreload" href="/assets/Vue生命周期.html-YB1KI6tX.js">
+    <link rel="prefetch" href="/assets/index.html-c-f7QqEC.js" as="script"><link rel="prefetch" href="/assets/index.html-KREhSs-q.js" as="script"><link rel="prefetch" href="/assets/Chrome多开.html-FNuEzU71.js" as="script"><link rel="prefetch" href="/assets/404.html-6Yl8cQE3.js" as="script"><link rel="prefetch" href="/assets/index.html-EhodoqdW.js" as="script"><link rel="prefetch" href="/assets/index.html-0_ouJmTF.js" as="script"><link rel="prefetch" href="/assets/Chrome多开.html--lDcIkiR.js" as="script"><link rel="prefetch" href="/assets/404.html-s-_ZEElH.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><!----><span class="site-name">Thirteen</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading"> <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/guide/default/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html#组件生命周期" class="router-link-active router-link-exact-active sidebar-item" aria-label="组件生命周期"><!--[--><!--]--> 组件生命周期 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/guide/default/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.html#页面生命周期" class="router-link-active router-link-exact-active sidebar-item" aria-label="页面生命周期"><!--[--><!--]--> 页面生命周期 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h2 id="组件生命周期" tabindex="-1"><a class="header-anchor" href="#组件生命周期" aria-hidden="true">#</a> 组件生命周期</h2><ul><li><code>beforeCreate</code> 实例已经开始初始化之后调用 【数据初始化未完成，页面没有开始渲染】</li><li><code>created</code> 实例创建完成之后调用 【组件创建完成，不代表组件已挂载到页面】</li><li><code>beforeMount</code> 在挂载开始之前被调用。</li><li><code>mounted</code> 挂载到实例上去之后调用。 注意：此处并不能确定子组件被全部挂载，如果需要子组件完全挂载之后在执行操作可以使用$nextTickVue官方文档</li><li><code>beforeUpdate</code> 数据更新时调用，发生在虚拟 DOM 打补丁之前。仅H5平台支持</li><li><code>updated</code> 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。仅H5平台支持</li><li><code>beforeDestroy</code> 实例销毁之前调用。在这一步，实例仍然完全可用。</li><li><code>destroyed</code> Vue实例销毁后调用。调用后，Vue实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。</li></ul><h2 id="页面生命周期" tabindex="-1"><a class="header-anchor" href="#页面生命周期" aria-hidden="true">#</a> 页面生命周期</h2><ul><li><code>onLoad</code> 监听页面加载，其参数为上个页面传递的数据，参数类型为object（用于页面传参）</li><li><code>onShow</code> 监听页面显示</li><li><code>onReady</code> 监听页面初次渲染完成</li><li><code>onHide</code> 监听页面隐藏</li><li><code>onUnload</code> 监听页面卸载</li><li><code>onPullDownRefresh</code> 监听用户下拉动作</li><li><code>onReachBottom</code> 页面上拉触底事件的处理函数</li><li><code>onShareAppMessage</code> 用户点击右上角分享 微信小程序</li><li><code>onPageScroll</code> 监听页面滚动</li><li><code>onTabItemTap</code> 当前是 tab 页时，点击 tab 时触发。</li></ul></div><!--[--><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app-9qRtXqBa.js" defer></script>
+  </body>
+</html>

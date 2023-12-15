@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-18854963","path":"/guide/default/Chrome%E5%A4%9A%E5%BC%80.html","title":"","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"视频中命令","slug":"视频中命令","link":"#视频中命令","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"guide/default/Chrome多开.md"}');export{e as data};
