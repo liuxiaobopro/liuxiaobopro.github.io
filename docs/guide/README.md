@@ -1,4 +1,3 @@
 # 目录
 
-## [Chrome多开](./default/Chrome多开.md)
-## [Vue生命周期](./default/Vue生命周期.md)
+## [Godot4: 2d角色四方向移动](./default/Godot4-2d角色四方向移动.md)

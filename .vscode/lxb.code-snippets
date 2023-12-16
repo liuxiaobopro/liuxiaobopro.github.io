@@ -1,0 +1,11 @@
+{
+	"video md": {
+		"prefix": "video",
+		"body": [
+			"<video width=\"640\" height=\"480\" controls>",
+			"  <source src=\"$1\">",
+			"</video>"
+		],
+		"description": "video md"
+	}
+}
