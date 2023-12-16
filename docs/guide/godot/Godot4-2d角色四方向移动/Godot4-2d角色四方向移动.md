@@ -1,14 +1,17 @@
 # Godot4-2d角色四方向移动
 
+## 教学视频
+[Godot 4 中流畅的2D相机跟随教程！（游戏开发教程）](https://www.bilibili.com/video/BV1Sc41117zK/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=4d989ba6b454d89c69ef2944654ea621)
+
 ## 资源下载
 [kenney](https://kenney.nl/)
 
-## 如图添加节点
-![](http://qncdn.liuxiaobo.pro/yy6y3i78p317026916346361702691633924.png)
+## 添加节点
+![](yy6y3i78p317026916346361702691633924.png)
 
 ## 添加动画
-![](http://qncdn.liuxiaobo.pro/izsxparvsf17026916856371702691685494.png)
-![](http://qncdn.liuxiaobo.pro/dpa3alnx7p17026917516361702691751051.png)
+![](izsxparvsf17026916856371702691685494.png)
+![](dpa3alnx7p17026917516361702691751051.png)
 
 ## 在 Player 添加脚本
 ```gdscript
@@ -38,13 +41,9 @@ func _physics_process(delta):
 ```
 
 
-## 效果展示
-<video width="640" height="480" controls>
-  <source src="http://qncdn.liuxiaobo.pro/qv7d3f2w6j170269092065820231216_093228.mp4">
-</video>
-
-
 ## 优化
 
 ### 位置平滑
-![](http://qncdn.liuxiaobo.pro/0os0u5xpak17026919446351702691943962.png)
+![](0os0u5xpak17026919446351702691943962.png)
+
+
