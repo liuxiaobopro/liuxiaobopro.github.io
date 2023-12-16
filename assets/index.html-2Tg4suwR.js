@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-74bc627b","path":"/about/","title":"关于我","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"邮箱","slug":"邮箱","link":"#邮箱","children":[]}],"git":{"updatedTime":1702692487000,"contributors":[{"name":"liuxiaobo","email":"isliuxiaobo@gmail.com","commits":1}]},"filePathRelative":"about/README.md"}');export{t as data};
