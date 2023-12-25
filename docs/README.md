@@ -8,4 +8,3 @@ actions:
   - text: 关于我
     link: /about/
     type: secondary
-footer: MIT Licensed | Copyright © 2020-present Evan You
